@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "Зеленый уголок"
-  text: "База знаний по уходу за комнатными растениями, болезням и размножению"
-  tagline: My great project tagline
+  name: "Сад на подоконнике"
+  text: "Что можно вырастить дома и съесть?"
+  tagline: База знаний о съедобных комнатных растениях: уход, выращивание, рецепты.
   actions:
     - theme: brand
       text: Markdown Examples
