@@ -1,36 +1,153 @@
 /* docs/.vitepress/theme/custom.css */
 
+/* ========== СВЕТЛАЯ ТЕМА  ========== */
 :root {
-    /* Основной цвет бренда (зеленый) */
-    --vp-c-brand-1: #B6C7AD;
-    /* Цвет при наведении */
-    --vp-c-brand-2: #263B26;
-    /* Цвет для активных элементов */
-    --vp-c-brand-3: #A88890;
-    /* Мягкий фон для блоков */
-    --vp-c-bg-soft: #DDE7DA;
+    /* Цвета брэнда */
+    --vp-c-brand-1: #375037;
+    --vp-c-brand-2: #342327;
+
+    /* Кнопка */
+    --vp-c-btn-main-bgclr: rgba(38, 59, 38, 1);
+    --vp-c-btn-main-shadow: rgba(55, 80, 55, 0.3);
+    /* Кнопка при наведении */
+    --vp-c-btn-hover: rgba(52, 35, 39, 1);
+    --vp-c-btn-alt-hover-bgclr: rgba(157, 114, 123, 0.1);
+    --vp-c-btn-hover-shadow: rgba(52, 35, 39, 0.4);
+    ;
+
+    /* Фоны */
+    --vp-c-bg: #F7F2F3;
+    --vp-c-bg-soft: #B6BFA0;
+    --vp-c-bg-alt: #D3D7C6;
+
+    /* Цвета текста */
+    --vp-c-text-1: #412C31;
+    --vp-c-text-2: #342327;
+    --vp-c-text-3: #0026ff;
 
     /* Семейство шрифтов */
     --vp-font-family-base: 'Segoe UI', 'Roboto', 'Georgia', serif;
 }
 
-/* Стили для ссылок с классом "brand" (например, кнопка "Начать знакомство") */
-:root {
-    --vp-button-brand-bg: var(--vp-c-brand-1);
-    --vp-button-brand-hover-bg: var(--vp-c-brand-2);
-    --vp-button-brand-active-bg: var(--vp-c-brand-3);
+/* ========== ТЁМНАЯ ТЕМА ========== */
+.dark {
+    /* Кнопка */
+    --vp-c-btn-main-bgclr: rgba(55, 80, 55, 1);
+    --vp-c-btn-main-shadow: rgba(55, 80, 55, 0.3);
+    /* Кнопка при наведении */
+    --vp-c-btn-hover: rgba(151, 119, 127, 1);
+    --vp-c-btn-alt-hover-bgclr: rgba(157, 114, 123, 0.1);
+    --vp-c-btn-hover-shadow: rgba(151, 119, 127, 0.3);
+
+
+    /* Фоны */
+    --vp-c-bg: #1B1415;
+    --vp-c-bg-soft: #1e2f1e;
+    --vp-c-bg-alt: #0F0A0B;
+
+    /* Цвета текста */
+    --vp-c-brand-1: #4D804D;
+    --vp-c-brand-2: #B89AA2;
+
+    --vp-c-text-1: #B6BFA0;
+    --vp-c-text-2: #BDC7AD;
+    --vp-c-text-3: #dc6a35;
+
+    /* Цвет границ */
+    --vp-c-border: #ffffff00;
+
+    /* Цвет теней (делаем темнее) */
+    --vp-c-shadow: rgba(0, 0, 0, 0.3);
 }
 
-/* Добавим скругления и тени картинкам в статьях для красоты */
+/* ========== ОБЩИЕ СТИЛИ (не зависят от темы) ========== */
+
+/* Картинки в статьях — скругление и тень */
 .vp-doc img {
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px var(--vp-c-shadow);
     margin: 1rem 0;
 }
 
-/* Сделаем текст в статьях чуть крупнее и удобнее для чтения */
+/* Текст в статьях — чуть крупнее для удобства чтения */
 .vp-doc p,
 .vp-doc li {
     font-size: 1.05rem;
     line-height: 1.6;
+}
+
+/* Ссылки при наведении */
+.vp-doc a:hover {
+    text-decoration: underline;
+    opacity: 0.85;
+}
+
+/* Стили для таблиц */
+.vp-doc table {
+    /* border-radius: 8px; */
+    overflow: hidden;
+}
+
+.vp-doc th {
+    background-color: #2D1E21;
+    color: #B89AA2;
+    border: 1px solid #2D1E21;
+    text-align: center;
+    border-bottom: 1px solid #2D1E21;
+}
+
+.vp-doc td {
+    background-color: #2D1E21;
+    border: 1px solid #2D1E21;
+    /* border-bottom: 1px solid #2D1E21; */
+}
+
+/* Стили для цитат */
+.vp-doc blockquote {
+    border-left-color: var(--vp-c-brand-1);
+    background-color: var(--vp-c-bg-soft);
+    border-radius: 0 8px 8px 0;
+    padding: 0.8rem 1.2rem;
+}
+
+/* ========== СТИЛИ ДЛЯ КНОПОК НА ГЛАВНОЙ ========== */
+
+/* Все кнопки на главной */
+.VPHome .VPButton {
+    border-radius: 40px !important;
+    font-weight: 500 !important;
+    padding: 0 28px !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Основная кнопка */
+.VPHome .VPButton.brand {
+    background-color: var(--vp-c-btn-main-bgclr) !important;
+    border-color: transparent !important;
+    color: white !important;
+    box-shadow: 0 4px 12px var(--vp-c-btn-main-shadow) !important;
+}
+
+/* Основная кнопка при наведении */
+.VPHome .VPButton.brand:hover {
+    background-color: var(--vp-c-btn-hover) !important;
+    border-color: transparent !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 16px var(--vp-c-btn-hover-shadow) !important;
+}
+
+/* Вторичные кнопки */
+.VPHome .VPButton.alt {
+    background-color: transparent !important;
+    border-color: var(--vp-c-btn-main-bgclr) !important;
+    color: var(--vp-c-btn-main-bgclr) !important;
+}
+
+/* Вторичные кнопки при наведении */
+.VPHome .VPButton.alt:hover {
+    background-color: var(--vp-c-btn-alt-hover-bgclr) !important;
+    border-color: var(--vp-c-btn-hover) !important;
+    color: var(--vp-c-btn-hover) !important;
+    transform: translateY(-2px) !important;
+
 }
