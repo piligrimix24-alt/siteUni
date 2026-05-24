@@ -5,21 +5,29 @@ layout: home
 hero:
   name: "Сад на подоконнике"
   text: "Что можно вырастить дома и съесть?"
-  tagline: База знаний о съедобных комнатных растениях: уход, выращивание, рецепты.
+  tagline: "База знаний о съедобных комнатных растениях: уход, выращивание, рецепты."
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Начать знакомство с AI ассистентом
+      link: /AIintroduction
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Правильный уход
+      link: care/
+    - theme: alt
+      text: Выращивание
+      link: grow/
+    - theme: alt
+      text: Готовые рецепты
+      link: recipes/
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
----
-
+  - title: 🌿 Уход
+    details: Полив, освещение, температура, подкормка - всё, чтобы растения росли здоровыми.
+  - title: 🍽️ Вкусные идеи
+    details: Как использовать мяту, базилик, розмарин и другие травы в еде и напитках.
+  - title: 🌱 Размножение
+    details: Черенки, семена, деление куста - выращивайте новые растения бесплатно.
+  - title: 🩺 Болезни и вредители
+    details: Как понять, что растению плохо, и как его спасти.
+  - title: 🔍 Поиск по базе
+    details: Спросите у AI-ассистента - он найдёт ответ по всем статьям.

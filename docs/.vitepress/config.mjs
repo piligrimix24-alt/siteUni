@@ -7,8 +7,11 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Главная страница', link: '/' },
+      { text: 'AI ассистент', link: '/' },//Добавить ссылку на страницу с иишкой
+      { text: 'Рецепты', link: '/recipes' },
+      { text: 'Уход', link: '/care' },
+      { text: 'Статьи', link: '/plants' }
     ],
 
     sidebar: [
@@ -16,13 +19,13 @@ export default defineConfig({
         text: 'Examples',
         items: [
           { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Мята', link: '/mint' }
+          { text: 'Мята', link: '/plants/mint' }
         ]
       }
     ],
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    // socialLinks: [
+    //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+    // ]
   }
 })
