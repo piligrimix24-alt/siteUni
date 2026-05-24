@@ -11,11 +11,11 @@ hero:
       text: Начать знакомство с AI ассистентом
       link: /AIintroduction
     - theme: alt
-      text: Правильный уход
-      link: care/
-    - theme: alt
       text: Статьи о растениях
       link: plants/
+    - theme: alt
+      text: Правильный уход
+      link: care/
     - theme: alt
       text: Готовые рецепты
       link: recipes/

@@ -16,10 +16,12 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Навигация',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Мята', link: '/plants/mint' }
+          { text: 'Начать знакомство с AI ассистентом', link: '/AIintroduction' },
+          { text: 'Статьи о растениях', link: '/plants/' },
+          { text: 'Правильный уход', link: '/care/' },
+          { text: 'Готовые рецепты', link: '/recipes/' }
         ]
       }
     ],

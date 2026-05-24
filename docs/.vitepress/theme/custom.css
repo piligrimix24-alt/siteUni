@@ -1,0 +1,36 @@
+/* docs/.vitepress/theme/custom.css */
+
+:root {
+    /* Основной цвет бренда (зеленый) */
+    --vp-c-brand-1: #B6C7AD;
+    /* Цвет при наведении */
+    --vp-c-brand-2: #263B26;
+    /* Цвет для активных элементов */
+    --vp-c-brand-3: #A88890;
+    /* Мягкий фон для блоков */
+    --vp-c-bg-soft: #DDE7DA;
+
+    /* Семейство шрифтов */
+    --vp-font-family-base: 'Segoe UI', 'Roboto', 'Georgia', serif;
+}
+
+/* Стили для ссылок с классом "brand" (например, кнопка "Начать знакомство") */
+:root {
+    --vp-button-brand-bg: var(--vp-c-brand-1);
+    --vp-button-brand-hover-bg: var(--vp-c-brand-2);
+    --vp-button-brand-active-bg: var(--vp-c-brand-3);
+}
+
+/* Добавим скругления и тени картинкам в статьях для красоты */
+.vp-doc img {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+}
+
+/* Сделаем текст в статьях чуть крупнее и удобнее для чтения */
+.vp-doc p,
+.vp-doc li {
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
