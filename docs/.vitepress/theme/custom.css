@@ -13,7 +13,6 @@
     --vp-c-btn-hover: rgba(52, 35, 39, 1);
     --vp-c-btn-alt-hover-bgclr: rgba(157, 114, 123, 0.1);
     --vp-c-btn-hover-shadow: rgba(52, 35, 39, 0.4);
-    ;
 
     /* Фоны */
     --vp-c-bg: #F7F2F3;
@@ -23,10 +22,30 @@
     /* Цвета текста */
     --vp-c-text-1: #412C31;
     --vp-c-text-2: #342327;
-    --vp-c-text-3: #0026ff;
+    --vp-c-text-3: #375037;
 
     /* Семейство шрифтов */
     --vp-font-family-base: 'Segoe UI', 'Roboto', 'Georgia', serif;
+
+    /* Стили для таблиц */
+    .vp-doc table {
+        overflow: hidden;
+    }
+
+    .vp-doc th {
+        background-color: #D3D7C6;
+        color: #375037;
+        border: 1px solid #D3D7C6;
+        text-align: center;
+        font-size: 18px;
+        border-bottom: 1px solid #B6BFA0;
+    }
+
+    .vp-doc td {
+        background-color: #D3D7C6;
+        border: 1px solid #D3D7C6;
+        border-bottom: 1px solid #B6BFA0;
+    }
 }
 
 /* ========== ТЁМНАЯ ТЕМА ========== */
@@ -39,7 +58,6 @@
     --vp-c-btn-alt-hover-bgclr: rgba(157, 114, 123, 0.1);
     --vp-c-btn-hover-shadow: rgba(151, 119, 127, 0.3);
 
-
     /* Фоны */
     --vp-c-bg: #1B1415;
     --vp-c-bg-soft: #1e2f1e;
@@ -48,16 +66,34 @@
     /* Цвета текста */
     --vp-c-brand-1: #4D804D;
     --vp-c-brand-2: #B89AA2;
-
     --vp-c-text-1: #B6BFA0;
     --vp-c-text-2: #BDC7AD;
     --vp-c-text-3: #dc6a35;
 
     /* Цвет границ */
     --vp-c-border: #ffffff00;
-
-    /* Цвет теней (делаем темнее) */
+    /* Цвет теней */
     --vp-c-shadow: rgba(0, 0, 0, 0.3);
+
+    /* Стили для таблиц */
+    .vp-doc table {
+        overflow: hidden;
+    }
+
+    .vp-doc th {
+        background-color: #2D1E21;
+        color: #B89AA2;
+        border: 1px solid #2D1E21;
+        text-align: center;
+        font-size: 18px;
+        border-bottom: 1px solid #1B1415;
+    }
+
+    .vp-doc td {
+        background-color: #2D1E21;
+        border: 1px solid #2D1E21;
+        border-bottom: 1px solid #1B1415;
+    }
 }
 
 /* ========== ОБЩИЕ СТИЛИ (не зависят от темы) ========== */
@@ -82,27 +118,6 @@
     opacity: 0.85;
 }
 
-/* Стили для таблиц */
-.vp-doc table {
-    /* border-radius: 8px; */
-    overflow: hidden;
-}
-
-.vp-doc th {
-    background-color: #2D1E21;
-    color: #B89AA2;
-    border: 1px solid #2D1E21;
-    text-align: center;
-    border-bottom: 1px solid #2D1E21;
-}
-
-.vp-doc td {
-    background-color: #2D1E21;
-    border: 1px solid #2D1E21;
-    /* border-bottom: 1px solid #2D1E21; */
-}
-
-/* Стили для цитат */
 .vp-doc blockquote {
     border-left-color: var(--vp-c-brand-1);
     background-color: var(--vp-c-bg-soft);

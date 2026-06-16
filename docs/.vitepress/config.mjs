@@ -4,11 +4,14 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Зеленый уголок",
   description: "База знаний по уходу за комнатными растениями, болезням и размножению",
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.png' }]
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Главная страница', link: '/' },
-      { text: 'AI ассистент', link: '/' },//Добавить ссылку на страницу с иишкой
+      { text: 'AI ассистент', link: '/AIintroduction' },
       { text: 'Рецепты', link: '/recipes' },
       { text: 'Уход', link: '/care' },
       { text: 'Статьи', link: '/plants' }
@@ -24,10 +27,6 @@ export default defineConfig({
           { text: 'Готовые рецепты', link: '/recipes/' }
         ]
       }
-    ],
-
-    // socialLinks: [
-    //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    // ]
+    ]
   }
 })
