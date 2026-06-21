@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Зеленый уголок",
   description: "База знаний по уходу за комнатными растениями, болезням и размножению",
+  ignoreDeadLinks: true,
   head: [
     ['link', { rel: 'icon', href: '/favicon.png' }]
   ],

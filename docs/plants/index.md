@@ -5,14 +5,11 @@
 ## Зелень и пряные травы
 
 - [Базилик](/plants/basil)
-- [Кинза](/plants/cilantro)
 - [Лук (зелёный)](/plants/chives)
 - [Микрозелень](/plants/microgreens)
 - [Мята](/plants/mint)
 - [Петрушка](/plants/parsley)
-- [Розмарин](/plants/rosemary)
 - [Салаты](/plants/salad)
-- [Тимьян (чабрец)](/plants/thyme)
 - [Укроп](/plants/dill)
 
 ## Овощи
@@ -28,7 +25,7 @@
 1. Выберите растение из списка
 2. Прочитайте общие [гайды по уходу](/care/) или специализированные гайды:
    - [Уход за зеленью](/care/greens)
-   - [Выращивание томатов](/vegetables/tomatoes)
-   - [Выращивание перцев](/vegetables/peppers)
-   - [Выращивание редиса](/vegetables/radish)
+   - [Выращивание томатов](/care/tomatoes)
+   - [Выращивание перцев](/care/peppers)
+   - [Выращивание редиса](/care/radish)
 3. Посмотрите [рецепты](/recipes/) с использованием выращенного урожая
