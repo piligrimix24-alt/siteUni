@@ -1,1 +1,0 @@
-import{_ as r,H as o,f as l,i}from"./chunks/framework.eFU6Tutu.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"care/greens.md","filePath":"care/greens.md"}'),n={name:"care/greens.md"};function a(d,t,s,e,g,h){return o(),l("div",null,[...t[0]||(t[0]=[i("",34)])])}const p=r(n,[["render",a]]);export{u as __pageData,p as default};
