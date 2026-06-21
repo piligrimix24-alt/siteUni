@@ -1,5 +1,4 @@
-# .github/workflows/deploy.yml
-name: Деплой сайта на GitHub Pages
+name: Деплой на GitHub Pages
 
 on:
   push:
@@ -15,24 +14,13 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Клонирование репозитория
-        uses: actions/checkout@v4
-
-      - name: Установка Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
-
-      - name: Установка зависимостей
-        run: npm ci
-
-      - name: Сборка сайта
-        run: npm run docs:build
-
-      - name: Загрузка артефактов
-        uses: actions/upload-pages-artifact@v3
+      - run: npm ci
+      - run: npm run docs:build
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: docs/.vitepress/dist
-
-      - name: Деплой на GitHub Pages
-        uses: actions/deploy-pages@v4
+      - uses: actions/deploy-pages@v4
