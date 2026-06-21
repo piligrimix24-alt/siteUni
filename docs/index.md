@@ -7,7 +7,7 @@ hero:
   text: "Что можно вырастить дома и съесть?"
   tagline: "База знаний о съедобных комнатных растениях: уход, выращивание, рецепты."
   image:
-    src: /siteUni/images/mascot.png
+    src: /images/mascot.png
     alt: Маскот Сада на подоконнике
   actions:
     - theme: brand
