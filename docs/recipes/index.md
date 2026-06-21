@@ -4,8 +4,14 @@
 
 ## Уже в базе
 
-- [Рецепты с зеленью](/recipes/greens)
+### Рецепты с зеленью
+
+- [Мята](/recipes/mint)
+- [Базилик](/recipes/basil)
+- [Микрозелень](/recipes/microgreens)
+
+### Другие рецепты
+
 - [Рецепты с помидорами](/recipes/tomatoes)
 - [Рецепты с перцами](/recipes/peppers)
-- [Рецепты с редисом](/recipes/radish)
 
