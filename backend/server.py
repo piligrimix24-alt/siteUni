@@ -10,7 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 # ===== НАСТРОЙКИ =====
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = "" #Вставьте ваш API ключ
 
 DOCS_DIR = r"C:\siteUni\docs"
 COLLECTION_NAME = "my_plants_knowledge_base"
