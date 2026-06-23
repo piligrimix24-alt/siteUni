@@ -7,7 +7,7 @@ export default defineConfig({
   ignoreDeadLinks: true,
   base: '/siteUni/',
   head: [
-    ['link', { rel: 'icon', href: '/favicon.png' }]
+    ['link', { rel: 'icon', href: '/siteUni/favicon.png' }]
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
