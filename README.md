@@ -25,7 +25,7 @@
 1. Установите Node.js и Python
 2. Клонируйте репозиторий
 3. В папке siteUni выполните: npm install и npm run docs:dev
-4. В папке backend: создайте виртуальное окружение, установите зависимости, запустите python openrouter_server.py
+4. В папке backend: создайте виртуальное окружение, установите зависимости, запустите python server.py
 5. Сайт откроется на localhost:5173
 
 Для AI-ассистента нужен API-ключ OpenRouter.

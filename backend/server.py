@@ -64,7 +64,7 @@ collection = chroma_client.get_or_create_collection(
     embedding_function=embedder
 )
 
-# Индексация (исключаем notUsed)
+# Индексация
 print("Загрузка статей...")
 all_md_files = glob.glob(os.path.join(DOCS_DIR, "**/*.md"), recursive=True)
 exclude = ["index.md", "api-examples.md", "markdown-examples.md"]
@@ -158,17 +158,10 @@ async def ask(request: QuestionRequest):
         if answer is None:
             answer = "Не удалось получить ответ."
         answer = clean_markdown(answer)
-        
-                # Формируем ссылки
         clean_links = []
         for source in sources:
             pretty_name = PRETTY_NAMES.get(source, source.replace(".md", "").replace("/", " → "))
-        #     # Убираем .md, добавляем .html
-        #     link = source.replace(".md", ".html")
-        #     # Полная ссылка
-        #     full_url = f"http://localhost:5173/{link}"
-        #     # Оборачиваем в <a> тег
-        #     clean_links.append(f'<a href="{full_url}">{pretty_name}</a>')
+
             clean_links.append(pretty_name)
         
         sources_html = "Источники: \n" + ", \n".join(clean_links)
